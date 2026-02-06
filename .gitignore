@@ -1,0 +1,44 @@
+﻿# Industry Readiness Index (IRI) System
+
+Real-time readiness assessment platform for students to evaluate their preparedness for dream jobs across startup, corporate, and leading companies.
+
+## Tech Stack
+- Frontend: React + Vite + Tailwind CSS
+- Backend: Django + Django REST Framework + MySQL
+- AI: Google Gemini API
+
+## Setup
+See /docs/setup.md
+"@ | Out-File -FilePath "README.md" -Encoding UTF8
+
+# Root .gitignore
+@"
+# Python
+__pycache__/
+*.py[cod]
+*.class
+*.so
+.Python
+venv/
+env/
+*.env
+
+# Django
+*.log
+db.sqlite3
+media/
+staticfiles/
+
+# Node
+node_modules/
+dist/
+.DS_Store
+
+# IDE
+.vscode/*
+!.vscode/settings.json
+.idea/
+
+# OS
+Thumbs.db
+*.swp

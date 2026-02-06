@@ -1,0 +1,236 @@
+/* ProfileForm.module.css - Navy/Teal Professional Theme */
+
+.container {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #f9fafb 0%, #f3f4f6 100%);
+  padding: 0;
+}
+
+/* Header Section */
+.header {
+  background: linear-gradient(135deg, #00547c 0%, #009b69 100%);
+  color: white;
+  padding: 3rem 2rem;
+  box-shadow: 0 4px 6px rgba(0, 84, 124, 0.1);
+}
+
+.headerContent {
+  max-width: 900px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.title {
+  font-size: 2rem;
+  font-weight: 700;
+  margin: 0;
+  letter-spacing: -0.5px;
+}
+
+.subtitle {
+  font-size: 1rem;
+  margin: 0.75rem 0 0 0;
+  opacity: 0.95;
+  font-weight: 400;
+}
+
+/* Progress Section */
+.progressContainer {
+  max-width: 900px;
+  margin: 2rem auto;
+  padding: 0 2rem;
+}
+
+.progressBar {
+  height: 6px;
+  background: #e5e7eb;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.06);
+}
+
+.progressFill {
+  height: 100%;
+  background: linear-gradient(90deg, #00547c 0%, #009b69 100%);
+  transition: width 0.3s ease;
+  border-radius: 10px;
+}
+
+.progressText {
+  font-size: 0.875rem;
+  color: #6b7280;
+  margin: 0.75rem 0 0 0;
+  font-weight: 500;
+}
+
+/* Alert Messages */
+.successAlert {
+  max-width: 900px;
+  margin: 0 auto 1.5rem;
+  padding: 1rem 2rem;
+  background: #d1fae5;
+  border: 1px solid #6ee7b7;
+  border-radius: 8px;
+  color: #065f46;
+  font-weight: 500;
+  text-align: center;
+}
+
+.errorAlert {
+  max-width: 900px;
+  margin: 0 auto 1.5rem;
+  padding: 1.25rem 2rem;
+  background: #fee2e2;
+  border: 2px solid #dc2626;
+  border-radius: 8px;
+  color: #7f1d1d;
+  font-weight: 500;
+  text-align: left;
+  box-shadow: 0 4px 6px rgba(220, 38, 38, 0.1);
+  animation: slideDown 0.3s ease-out;
+}
+
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Form Content */
+.formContent {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 2rem;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  margin-bottom: 2rem;
+}
+
+/* Button Container */
+.buttonContainer {
+  max-width: 900px;
+  margin: 0 auto 2rem;
+  padding: 0 2rem;
+  display: flex;
+  gap: 1rem;
+  justify-content: space-between;
+}
+
+/* Standard Button */
+.btnSecondary {
+  flex: 1;
+  padding: 0.75rem 1.5rem;
+  background: #e5e7eb;
+  color: #111827;
+  border: none;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 0.95rem;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.btnSecondary:hover:not(:disabled) {
+  background: #d1d5db;
+  transform: translateY(-1px);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.btnSecondary:active:not(:disabled) {
+  transform: translateY(0);
+}
+
+.btnSecondary:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+/* Primary Button */
+.btnPrimary {
+  flex: 1;
+  padding: 0.75rem 1.5rem;
+  background: linear-gradient(135deg, #00547c 0%, #009b69 100%);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 0.95rem;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.btnPrimary:hover:not(:disabled) {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 84, 124, 0.3);
+}
+
+.btnPrimary:active:not(:disabled) {
+  transform: translateY(0);
+}
+
+.btnPrimary:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.submitBtn {
+  background: linear-gradient(135deg, #059669 0%, #00a876 100%);
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+.submitBtn:hover:not(:disabled) {
+  box-shadow: 0 6px 16px rgba(5, 150, 105, 0.3);
+}
+
+/* Draft Note */
+.draftNote {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0 2rem;
+  font-size: 0.875rem;
+  color: #6b7280;
+  text-align: center;
+  font-style: italic;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .header {
+    padding: 2rem 1.5rem;
+  }
+
+  .title {
+    font-size: 1.5rem;
+  }
+
+  .subtitle {
+    font-size: 0.95rem;
+  }
+
+  .formContent {
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .buttonContainer {
+    padding: 0 1.5rem;
+    flex-direction: column;
+  }
+
+  .btnSecondary,
+  .btnPrimary {
+    width: 100%;
+  }
+
+  .draftNote {
+    padding: 0 1.5rem;
+    font-size: 0.8rem;
+  }
+}
